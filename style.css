@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#home-section {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.back-img {
+    justify-content: center;
+    display: flex;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    z-index: 10;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: all 0.5s ease;
+
+}
+
+nav:hover{
+    background-color: white;
+}
+
+.logo sup {
+    padding-left: 20px;
+    font-size: 50px;
+    font-weight: lighter;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:serif;
+}
+
+a:hover {
+    color: silver;
+}
+
+.burger {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 27px;
+    height: 2px;
+    background-color: black;
+    margin: 6px;
+
+}
+
+.img-text {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    transform: translate(-5%, -35%);
+    z-index: 10;
+    text-align: center;
+}
+
+.img-text h2 {
+    font-size: 55px;
+    font-weight: 500;
+    font-family:serif;
+    padding: 10px;
+}
+
+.img-text p {
+    font-size: 20px;
+    
+}
+
+/* page 1 */
+
+#page1 {
+    height: 100vh;
+}
+
+/*page 2 */ 
+
+#page2 {
+    height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .icons {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        background-color: white;
+    }
+
+    .icons {
+        position: absolute;
+        width: 30%;
+        height: 66vh;
+        right: 0;
+        top: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        transform: translateX(100%);
+        transition: all 1s ease;
+    }
+
+    a {
+        color: white;
+    }
+
+    
+
+    .burger {
+        display: block;
+    }
+
+}
+
+.nav-slide {
+    transform: translateX(0);
+}
